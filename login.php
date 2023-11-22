@@ -13,7 +13,7 @@ if(mysqli_num_rows($res) == 1){
   if(password_verify($senhaUsuario, $linha['senhaUsuario'])){
     session_start();
     $_SESSION['nomeUsuario'] = $nomeUsuario;
-    header('location: inicial.php');
+    header('location: index.php');
     exit();
   }
   else{
